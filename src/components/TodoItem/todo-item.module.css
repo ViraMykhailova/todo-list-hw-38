@@ -1,0 +1,8 @@
+.todo_item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+    background-color: #cdcece;
+    padding: 5px;
+}
