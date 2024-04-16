@@ -24,8 +24,10 @@ function TodoList () {
             title,
             completed: false
         };
-        setTodos([...todos, newTodo]);
-        setTitle('');
+        if (title !== '') {
+            setTodos([...todos, newTodo]);
+            setTitle('');
+        }
     }
     function changeCompleted (id) {
         setTodos(todos.map(todo=>{
